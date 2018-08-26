@@ -82,14 +82,12 @@ body.noI {
 	}
 }
 .wufoo {
-	form {
-		li {
-			&.focused {
-				background-color: transparent;
-			}
-			&.buttons {
-				text-align: center;
-			}
+	li {
+		&.focused {
+			background-color: transparent;
+		}
+		&.buttons {
+			text-align: center;
 		}
 	}
 
