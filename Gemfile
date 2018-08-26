@@ -15,6 +15,7 @@ gem 'middleman-sprockets', '>= 4.0.0'
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-gh-pages'
 gem 'middleman-livereload'
+gem 'middleman-autoprefixer'
 
 gem 'sass', '3.5.6'
 gem 'sass-globbing', '1.1.5'

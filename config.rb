@@ -42,6 +42,11 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 
+# Add autoprefixing
+activate :autoprefixer do |config|
+  config.browsers = ['last 3 versions', 'Explorer >= 9']
+end
+
 # Set relative paths
 
 activate :relative_assets

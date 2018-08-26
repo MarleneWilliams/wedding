@@ -28,15 +28,29 @@ a#page-top
         == link_to "Southlake Church", "http://www.southlakechurch.com/"
       address.location 1555 SW Borland Road <br> West Linn, Oregon 97068
 
-      h3.additional-info Additional info
-      p Dress: Semi-Formal
-      p Cell phones: For the sake of participants and other guests, we ask that cell phones be turned off during the ceremony.
-      p Photos: No photos allowed during the ceremony. Our photographers will be handling it!
+    .additional-info
+      h3.additional-info--title Additional info
+      p 
+        span.bold Dress:
+        |  Semi-Formal
+      p 
+        span.bold Parking:
+        |  Onsite and plentiful
+      p 
+        span.bold Reception:
+        |  The reception will follow the ceremony, with a small break in between to transition the main area from the ceremony seating to tables and chairs.
+      p 
+        span.bold Cell phones:
+        |  For the sake of participants and other guests, we ask that cell phones be turned off during the ceremony.
+      p 
+        span.bold Photos:
+        |  No photos allowed during the ceremony. Our photographers will be handling it!
 
   section.page-section.page-section--rsvp
     a#section-rsvp.section-anchor
     h2.section-title RSVP
-    p Coming soon
+    / p Coming soon
+    == partial "/partials/wufoo-rsvp.html"
     == link_to "Back to top", "#page-top", class: "top-link"
 
   section.page-section.page-section--registries
