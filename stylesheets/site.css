@@ -656,6 +656,12 @@ label.desc,
 legend.desc {
   font-weight: 400; }
 
+fieldset {
+  border: 0 none;
+  padding: 0; }
+  fieldset span {
+    display: inline-block; }
+
 html.embed {
   background-color: transparent; }
 
@@ -665,6 +671,8 @@ body.noI {
   font-size: 16px;
   font-weight: 300;
   padding: 0; }
+  body.noI:after, body.noI:before {
+    display: none; }
 
 @media (min-width: 769px) {
   .wufoo-form {
@@ -680,14 +688,17 @@ body.noI {
   width: 1px; }
 .wufoo-form .buttons {
   text-align: center; }
-.wufoo-form form li.focused {
+
+.wufoo form li.focused {
   background-color: transparent; }
-.wufoo-form label.desc,
-.wufoo-form legend.desc {
+.wufoo form li.buttons {
+  text-align: center; }
+.wufoo label.desc,
+.wufoo legend.desc {
   font-size: 100%;
   font-weight: 400; }
-.wufoo-form fieldset {
+.wufoo fieldset {
   border: 0 none;
   padding: 0; }
-  .wufoo-form fieldset span {
+  .wufoo fieldset span {
     display: inline-block; }
