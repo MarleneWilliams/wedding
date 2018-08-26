@@ -322,7 +322,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 300;
-  padding: 0 20px;
+  padding: 0 20px 240px 20px;
   position: relative;
   text-align: center; }
   body:after, body:before {
@@ -345,11 +345,15 @@ body {
 h1, h2, h3, h4, h5 {
   color: #05060a;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400; }
+  font-weight: 300; }
 
 h1 {
   font-size: 1.8em;
   margin: 0; }
+
+h2 {
+  font-size: 1.7em;
+  text-transform: uppercase; }
 
 a {
   color: #1d2968;
@@ -428,15 +432,32 @@ address {
 .page-container {
   margin: 0 auto;
   max-width: 1200px; }
+  @media (min-width: 769px) {
+    .page-container {
+      padding-top: 120px; } }
 
 .page-section {
   margin-bottom: 80px; }
 
+.section-anchor {
+  display: block;
+  margin-top: -100px;
+  padding-top: 100px;
+  position: relative;
+  z-index: -4; }
+
+.top-link {
+  display: block;
+  font-size: .8em;
+  margin-top: 2em;
+  padding: 1em;
+  text-align: right; }
+  @media (min-width: 769px) {
+    .top-link {
+      display: none; } }
+
 .welcome {
   margin-bottom: 40px; }
-  @media (min-width: 769px) {
-    .welcome {
-      margin-top: 120px; } }
 
 .page-title {
   font-family: "Playfair Display", serif;
