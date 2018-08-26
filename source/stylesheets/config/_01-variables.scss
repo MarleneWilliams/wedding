@@ -1,0 +1,56 @@
+//
+// Variables
+//
+
+// Colors
+$black: #000000;
+$black-blue: #05060a;
+$white: #ffffff;
+$silver: #d6d6d7;
+$green: #305c19;
+$blue: #1d2968;
+
+// Color assignments
+$heading-color: $black-blue;
+
+$text-color: $black-blue;
+
+$link-color: $blue;
+$link-hover-color: lighten($blue, 30%);
+
+// Font stacks
+
+// Font assignments
+
+
+//
+// Layout
+//
+
+// Breakpoints
+
+// Small screen / phone
+$sm: 0;
+// Phablet / in between mobile and tablet
+$ph: 401px;
+// Medium screen / tablet
+$md: 769px;
+// Semi-large / in between tablet and desktop
+$sl: 992px;
+// Large screen / desktop
+$lg: 1100px;
+// Extra large screen / wide desktop
+$xl: 1442px;
+// Double Extra large screens / wide monitor
+$xxl: 1900px;
+
+
+
+//
+// Utilities
+//
+
+// Transitions
+$transition-time: 0.3s;
+$transition-effect: ease;
+$transition-defaults: $transition-time $transition-effect;

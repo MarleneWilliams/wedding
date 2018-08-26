@@ -1,0 +1,31 @@
+//
+// Base HTML styles
+//
+
+body {
+  background: white;
+  text-align: center;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+
+h1 {
+  color: $heading-color;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.8em;
+  font-weight: 400;
+  margin: 0;
+}
+
+a {
+	color: $link-color;
+	@include transition(color);
+	&:visited {
+		color: $link-color;
+	}
+	&:hover,
+	&:active,
+	&:focus {
+		color: $link-hover-color;
+	}
+}

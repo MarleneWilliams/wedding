@@ -1,0 +1,27 @@
+//
+// Mixins
+//
+
+// Media queries
+@mixin mq($query) {
+  @media (min-width: $query) {
+    @content;
+  }
+}
+
+// Transitions
+@mixin transition($attribute...) {
+	$result: ();
+	@for $i from 1 through length($attribute) {
+    $prop: nth($attribute, $i);
+    $result: append($result, $prop #{$transition-defaults});
+    @if $i != length($attribute) {
+      $result: append($result, unquote($string: ","));
+    }
+  }
+  -webkit-transition: $result;
+  -moz-transition: $result;
+  -ms-transition: $result;
+  -o-transition: $result;
+  transition: $result;
+}
