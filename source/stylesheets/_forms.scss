@@ -6,7 +6,7 @@ input[type=text],
 input[type=email],
 input[type=tel],
 input.text,
-textarea {
+textarea.textarea {
 	@include transition(bacground-color, border-color);
   background: $white;
 	border: 2px solid #c3c3c3;
@@ -17,6 +17,9 @@ textarea {
   &:active {
   	border-color: #7c7c7c;
   	outline: none;
+  }
+  &:hover {
+  	border-color: #9c9c9c;
   }
 }
 
