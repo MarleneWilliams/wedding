@@ -164,8 +164,10 @@
 
 .location {
   &--name {
+    font-size: 1.25em;
     font-weight: 400;
     margin-bottom: 4px;
+    margin-top: 0;
   }
 }
 
@@ -185,5 +187,32 @@
   }
   to {
     -webkit-transform: scale(1);
+  }
+}
+
+//
+// Registry
+//
+
+.registry {
+  &--items {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    text-align: center;
+  }
+  &--item {
+    margin: 0 20px 40px 20px;
+  }
+  &--link {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    img {
+      margin: 0 auto;
+    }
   }
 }

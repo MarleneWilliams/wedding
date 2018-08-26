@@ -24,9 +24,14 @@ a#page-top
         span.name Marlene Williams
     .intro
       h2.date October 20, 2018 - 11am
-      h3.location.location--name
+      p.location.location--name
         == link_to "Southlake Church", "http://www.southlakechurch.com/"
       address.location 1555 SW Borland Road <br> West Linn, Oregon 97068
+
+      h3.additional-info Additional info
+      p Dress: Semi-Formal
+      p Cell phones: For the sake of participants and other guests, we ask that cell phones be turned off during the ceremony.
+      p Photos: No photos allowed during the ceremony. Our photographers will be handling it!
 
   section.page-section.page-section--rsvp
     a#section-rsvp.section-anchor
@@ -37,5 +42,10 @@ a#page-top
   section.page-section.page-section--registries
     a#section-registries.section-anchor
     h2.section-title Registries
-    p Coming soon
+    .registry--items
+      .registry--item
+        == link_to image_tag('logo-cutco.svg'), "http://cutco.com/registry/554yj", class: "registry--link"
+      .registry--item
+        == link_to image_tag('logo-rei-co-op-logo-vector.png'), "https://www.rei.com/GiftRegistryDetails/15289984", class: "registry--link"
+    p More coming soon
     == link_to "Back to top", "#page-top", class: "top-link"
