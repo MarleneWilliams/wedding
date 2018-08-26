@@ -2,35 +2,40 @@
 title: M&M's Wedding Website
 ---
 
+a#page-top
 .page-container
-	header.page-header
-	  nav.page-menu
-	    ul
-	      li.page-menu--item.home-link
-	        == link_to "M&M's Wedding", "#page-top", class: "page-menu--link"
-	      li.page-menu--item.rsvp-link
-	        == link_to "RSVP", "#section-rsvp", class: "page-menu--link"
-	      li.page-menu--item.registry-link
-	        == link_to "Registries", "#section-registries", class: "page-menu--link"
+  header.page-header
+    nav.page-menu
+      ul
+        li.page-menu--item.home-link
+          == link_to "M&M's Wedding", "#page-top", class: "page-menu--link"
+        li.page-menu--item.rsvp-link
+          == link_to "RSVP", "#section-rsvp", class: "page-menu--link"
+        li.page-menu--item.registry-link
+          == link_to "Registries", "#section-registries", class: "page-menu--link"
 
-	section#page-top.page-section
-		.welcome
-		  .intro-picture
-		    == image_tag 'mm-pic-1.jpg'
-		  h1.page-title
-		    span.name Michael Wanberg
-		    |  & 
-		    span.name Marlene Williams
-		.intro
-		  h2.date October 20, 2018 - 11am
-		  h3.location.location--name
-		    == link_to "Southlake Church", "http://www.southlakechurch.com/"
-		  address.location 1555 SW Borland Road <br> West Linn, Oregon 97068
+  section.page-section
+    .welcome
+      .intro-picture
+        == image_tag 'mm-pic-1.jpg'
+      h1.page-title
+        span.name Michael Wanberg
+        |  & 
+        span.name Marlene Williams
+    .intro
+      h2.date October 20, 2018 - 11am
+      h3.location.location--name
+        == link_to "Southlake Church", "http://www.southlakechurch.com/"
+      address.location 1555 SW Borland Road <br> West Linn, Oregon 97068
 
-	section#section-rsvp.page-section
-	  h2.section-title RSVP
-	  p Coming soon
+  section.page-section.page-section--rsvp
+    a#section-rsvp.section-anchor
+    h2.section-title RSVP
+    p Coming soon
+    == link_to "Back to top", "#page-top", class: "top-link"
 
-	section#section-registries.page-section
-	  h2.section-title Registries
-	  p Coming soon
+  section.page-section.page-section--registries
+    a#section-registries.section-anchor
+    h2.section-title Registries
+    p Coming soon
+    == link_to "Back to top", "#page-top", class: "top-link"
