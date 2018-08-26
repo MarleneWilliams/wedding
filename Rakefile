@@ -9,7 +9,7 @@ end
 # Change basetheme.dev to your site path
 desc 'Running Browsersync'
 task :browsersync do
-  system 'browser-sync start --proxy "wedding.local" --files "css/*.css, javascripts/*.js, source/**/*.slim" --no-inject-changes'
+  system 'browser-sync start --proxy "wedding.local" --files "stylesheets/*.css, javascripts/*.js, source/**/*.slim" --no-inject-changes'
 end
 
 desc 'Watch sass'
