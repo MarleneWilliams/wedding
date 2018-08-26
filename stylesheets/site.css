@@ -671,13 +671,16 @@ fieldset {
 html.embed {
   background-color: transparent; }
 
+.embed body,
 body.noI {
   background-color: transparent;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 300;
   padding: 0; }
-  body.noI:after, body.noI:before {
+  .embed body:after, .embed body:before,
+  body.noI:after,
+  body.noI:before {
     display: none; }
 
 @media (min-width: 769px) {
@@ -708,3 +711,7 @@ body.noI {
   padding: 0; }
   .wufoo fieldset span {
     display: inline-block; }
+.wufoo .confirm h2 {
+  color: #05060a;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300; }
