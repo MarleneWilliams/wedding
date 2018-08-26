@@ -345,7 +345,7 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
     z-index: -1; }
   body:before {
-    background-image: url("../images/mountain-background.jpg");
+    background-image: url("../images/mountain-background--med-quality.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -2; }
@@ -656,10 +656,15 @@ label.desc,
 legend.desc {
   font-weight: 400; }
 
+html.embed {
+  background-color: transparent; }
+
 body.noI {
+  background-color: transparent;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  font-weight: 300; }
+  font-weight: 300;
+  padding: 0; }
 
 @media (min-width: 769px) {
   .wufoo-form {
@@ -677,3 +682,12 @@ body.noI {
   text-align: center; }
 .wufoo-form form li.focused {
   background-color: transparent; }
+.wufoo-form label.desc,
+.wufoo-form legend.desc {
+  font-size: 100%;
+  font-weight: 400; }
+.wufoo-form fieldset {
+  border: 0 none;
+  padding: 0; }
+  .wufoo-form fieldset span {
+    display: inline-block; }
