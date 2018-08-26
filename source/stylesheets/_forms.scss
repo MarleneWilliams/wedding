@@ -45,11 +45,15 @@ legend {
 //
 // Wufoo forms
 //
-
+html.embed {
+	background-color: transparent;
+}
 body.noI {
+	background-color: transparent;
   font-family: $body-font;
   font-size: 16px;
   font-weight: 300;
+  padding: 0;
 }
 
 .wufoo-form {
@@ -69,6 +73,22 @@ body.noI {
 			&.focused {
 				background-color: transparent;
 			}
+		}
+	}
+
+	label,
+	legend {
+		&.desc {
+			font-size: 100%;
+			font-weight: 400;
+		}
+	}
+
+	fieldset {
+		border: 0 none;
+		padding: 0;
+		span {
+			display: inline-block;
 		}
 	}
 }
