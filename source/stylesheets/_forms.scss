@@ -41,6 +41,14 @@ legend {
 	}
 }
 
+fieldset {
+	border: 0 none;
+	padding: 0;
+	span {
+		display: inline-block;
+	}
+}
+
 
 //
 // Wufoo forms
@@ -54,6 +62,10 @@ body.noI {
   font-size: 16px;
   font-weight: 300;
   padding: 0;
+  &:after,
+  &:before {
+  	display: none;
+  }
 }
 
 .wufoo-form {
@@ -68,10 +80,15 @@ body.noI {
 	.buttons {
 		text-align: center;
 	}
+}
+.wufoo {
 	form {
 		li {
 			&.focused {
 				background-color: transparent;
+			}
+			&.buttons {
+				text-align: center;
 			}
 		}
 	}
