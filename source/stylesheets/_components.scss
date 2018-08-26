@@ -1,14 +1,156 @@
+//
+// Page navigation
+//
+
+.page-header {
+  margin-bottom: 40px;
+  @include mq($md) {
+    background-color: transparentize($white, 0.15);
+    // background: linear-gradient(to bottom, transparentize($white, 0.1), transparent 90%);
+    // background: linear-gradient(to bottom, transparentize($white, 0.1), transparentize($white, 0.1), transparentize($white, 0.1), transparent);
+    box-shadow: 10px 5px 5px transparentize($white, 0.1);
+    left: 0;
+    margin-bottom: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    &:after {
+      // background: linear-gradient(to bottom, transparentize($white, 0.1), transparent);
+      // content: '';
+      // display: block;
+      // height: 20px;
+      // left: 0;
+      // position: absolute;
+      // top: 100%;
+      // width: 100%;
+    }
+  }
+}
+
+.page-menu {
+  ul {
+    align-content: stretch;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    @include mq($ph) {
+      flex-flow: row no-wrap;
+    }
+  }
+  &--item {
+    display: block;
+    @include mq($ph) {
+      text-align: center;
+    }
+    &.home-link {
+      font-family: $statement-font;
+      flex-grow: 1;
+      width: 100%;
+      @include mq($ph) {
+        flex-grow: 0;
+        order: 0;
+        width: auto;
+      }
+      a {
+        font-size: 2em;
+        padding: .5em 0;
+        @include mq($ph) {
+          font-size: 1.5em;
+          padding: .5em 1em;
+          width: 5em;
+        }
+        @include mq($md) {
+          padding: .5em 2em;
+        }
+      }
+    }
+    &.rsvp-link {
+      @include mq($ph) {
+        order: -1;
+      }
+    }
+  }
+  &--link {
+    display: block;
+    padding: .5em 1em;
+    text-decoration: none;
+    @include mq($sl) {
+      padding: .5em 2em;
+    }
+  }
+}
+
+//
+// Sections
+//
+
+.page-container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.page-section {
+  margin-bottom: 80px;
+}
+
+// Intro
+.welcome {
+  // -webkit-animation-name: welcome;
+  // -webkit-animation-duration: .9s;
+  margin-bottom: 40px;
+  @include mq($md) {
+    margin-top: 120px;
+  }
+}
+
+.page-title {
+  font-family: $statement-font;
+  font-size: 1.25em;
+  font-weight: unset;
+  line-height: 1.1;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 280px;
+  @include mq($ph) {
+    font-size: 1.5em;
+    max-width: 320px;
+  }
+  @include mq($md) {
+    max-width: 100%;
+  }
+  @include mq($lg) {
+    font-size: 2.25em;
+    margin-bottom: 80px;
+  }
+  .name {
+    display: block;
+    font-size: 1.5em;
+    &:first-of-type {
+      text-align: left;
+    }
+    &:last-of-type {
+      text-align: right;
+    }
+    @include mq($md) {
+      display: inline;
+    }
+  }
+}
 .intro-picture {
   img {
-    // height: 18.75em;
-    margin-top: 3em;
+    margin-bottom: 20px;
     width: 60%;
   }
 }
 
-.welcome {
-  // -webkit-animation-name: welcome;
-  // -webkit-animation-duration: .9s;
+.location {
+  &--name {
+    font-weight: 400;
+    margin-bottom: 4px;
+  }
 }
 
 @-webkit-keyframes welcome {
@@ -28,44 +170,4 @@
   to {
     -webkit-transform: scale(1);
   }
-}
-
-//
-// Page navigation
-//
-
-.page-menu {
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-  }
-  &--item {
-    display: block;
-    &.home-link {
-      order: 0;
-      a {
-        font-size: 1.5em;
-        width: 5em;
-      }
-    }
-    &.rsvp-link {
-      order: -1;
-    }
-  }
-  &--link {
-    display: block;
-    padding: .5em 1em;
-    text-decoration: none;
-  }
-}
-
-//
-// Sections
-//
-
-.page-section {
-  margin-bottom: 80px;
 }

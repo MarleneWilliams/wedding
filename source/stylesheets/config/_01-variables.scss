@@ -19,8 +19,21 @@ $link-color: $blue;
 $link-hover-color: lighten($blue, 30%);
 
 // Font stacks
+$pinyon: 'Pinyon Script', cursive;
+$forum: 'Forum', serif;
+
+$playfair-display: 'Playfair Display', serif;
+$montesserat: 'Montserrat', sans-serif;
+
+$great-vibes: 'Great Vibes', cursive;
 
 // Font assignments
+$statement-font: $playfair-display;
+$serif: $playfair-display;
+$sans-serif: $montesserat;
+
+$heading-font: $sans-serif;
+$body-font: $sans-serif;
 
 
 //
