@@ -689,9 +689,9 @@ body.noI {
 .wufoo-form .buttons {
   text-align: center; }
 
-.wufoo form li.focused {
+.wufoo li.focused {
   background-color: transparent; }
-.wufoo form li.buttons {
+.wufoo li.buttons {
   text-align: center; }
 .wufoo label.desc,
 .wufoo legend.desc {
