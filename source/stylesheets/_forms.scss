@@ -59,6 +59,7 @@ fieldset {
 html.embed {
 	background-color: transparent;
 }
+.embed body,
 body.noI {
 	background-color: transparent;
   font-family: $body-font;
@@ -107,6 +108,14 @@ body.noI {
 		padding: 0;
 		span {
 			display: inline-block;
+		}
+	}
+
+	.confirm {
+		h2 {
+			color: $heading-color;
+			font-family: $heading-font;
+			font-weight: 300;
 		}
 	}
 }
