@@ -131,9 +131,10 @@
   line-height: 1.1;
   margin-left: auto;
   margin-right: auto;
+  max-width: 8em;
   @include mq($ph) {
     font-size: 1.35em;
-    max-width: 340px;
+    max-width: 8.5em;
   }
   @include mq($md) {
     font-size: 1.75em;
