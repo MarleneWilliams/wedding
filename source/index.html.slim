@@ -20,10 +20,10 @@ a#page-top
         == image_tag 'mm-pic-1.jpg'
       h1.page-title
         span.name Michael
-        |  & 
+        span.and  & 
         span.name Marlene
     .intro
-      h2.date October 20, 2018 - 11am
+      p.date October 20, 2018 - 11am
       p.location.location--name
         == link_to "Southlake Church", "http://www.southlakechurch.com/"
       address.location 1555 SW Borland Road <br> West Linn, Oregon 97068
@@ -45,11 +45,11 @@ a#page-top
       p 
         span.bold Photos:
         |  No photos allowed during the ceremony. Our photographers will be handling it!
+    == link_to "Back to top", "#page-top", class: "top-link"
 
   section.page-section.page-section--rsvp
     a#section-rsvp.section-anchor
     h2.section-title RSVP
-    / p Coming soon
     == partial "/partials/wufoo-rsvp.html"
     == link_to "Back to top", "#page-top", class: "top-link"
 
@@ -59,7 +59,16 @@ a#page-top
     .registry--items
       .registry--item
         == link_to image_tag('logo-cutco.svg'), "http://cutco.com/registry/554yj", class: "registry--link"
+        p The best knives ever!
+      .registry--item
+        == link_to image_tag('logo-amazon.svg'), "https://www.amazon.com/wedding/michael-wanberg-marlene-williams-west-linn-october-2018/registry/1EI27XDF7ZI30", class: "registry--link"
+        p Household items
+      .registry--item
+        == link_to image_tag('logo-bed-bath-and-beyond.svg'), "https://www.bedbathandbeyond.com:443/store/giftregistry/view_registry_guest.jsp?registryId=546463616&eventType=Wedding&pwsurl=", class: "registry--link"
+        p Household items
       .registry--item
         == link_to image_tag('logo-rei-co-op-logo-vector.png'), "https://www.rei.com/GiftRegistryDetails/15289984", class: "registry--link"
+        p Help us adventure!
+    h3 Gift cards
     p More coming soon
     == link_to "Back to top", "#page-top", class: "top-link"
