@@ -110,11 +110,22 @@ body.noI {
 		}
 	}
 
+	input {
+		&.text,
+		&.file {
+			font-family: $body-font;
+		}
+	}
+	textarea.textarea {
+		font-family: $body-font;
+	}
+
 	fieldset {
 		border: 0 none;
 		padding: 0;
 		span {
 			display: inline-block;
+			font-family: $body-font;
 		}
 	}
 
