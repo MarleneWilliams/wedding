@@ -342,7 +342,7 @@ body {
     top: 0;
     width: 100%; }
   body:after {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.85);
     z-index: -1; }
   body:before {
     background-image: url("../images/mountain-background--med-quality.jpg");
@@ -362,12 +362,16 @@ h1 {
   margin: 0; }
 
 h2 {
+  font-family: "Playfair Display", serif;
   font-size: 1.5em;
   margin-bottom: .5em;
   text-transform: uppercase; }
   @media (min-width: 769px) {
     h2 {
       font-size: 2em; } }
+  @media (min-width: 1100px) {
+    h2 {
+      font-size: 2.25em; } }
 
 h3 {
   font-size: 1.25em;
@@ -375,6 +379,9 @@ h3 {
   @media (min-width: 769px) {
     h3 {
       font-size: 1.5em; } }
+  @media (min-width: 1100px) {
+    h3 {
+      font-size: 1.75em; } }
 
 a {
   color: #1d2968;
@@ -492,7 +499,7 @@ address {
       padding-top: 120px; } }
 
 .page-section {
-  margin-bottom: 60px; }
+  margin-bottom: 40px; }
 
 .section-anchor {
   display: block;
@@ -508,7 +515,7 @@ address {
 .top-link {
   display: block;
   font-size: .8em;
-  margin-top: 2em;
+  margin-top: 1em;
   padding: 1em;
   text-align: right; }
   @media (min-width: 769px) {
@@ -516,26 +523,30 @@ address {
       display: none; } }
 
 .welcome {
-  margin-bottom: 40px; }
+  margin-bottom: 20px; }
+
+.intro {
+  margin-bottom: 60px; }
 
 .page-title {
   font-family: "Playfair Display", serif;
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-weight: unset;
   line-height: 1.1;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  max-width: 8em; }
   @media (min-width: 401px) {
     .page-title {
-      font-size: 1.35em;
-      max-width: 340px; } }
+      font-size: 1.75em;
+      max-width: 8.5em; } }
   @media (min-width: 769px) {
     .page-title {
-      font-size: 1.75em;
+      font-size: 2.25em;
       max-width: 100%; } }
   @media (min-width: 1100px) {
     .page-title {
-      font-size: 2.25em;
+      font-size: 3.25em;
       margin-bottom: 40px; } }
   .page-title .name {
     display: block;
@@ -549,6 +560,15 @@ address {
         font-size: 1.5em;
         display: inline; } }
 
+.and {
+  display: block;
+  line-height: .65;
+  margin-top: .45em; }
+  @media (min-width: 769px) {
+    .and {
+      display: inline;
+      line-height: inherit; } }
+
 .intro-picture {
   margin-bottom: 20px;
   margin-left: auto;
@@ -557,8 +577,11 @@ address {
     .intro-picture {
       width: 60%; } }
 
+.date {
+  font-size: 1.5em;
+  text-transform: uppercase; }
+
 .location--name {
-  font-size: 1.25em;
   font-weight: 400;
   margin-bottom: 4px;
   margin-top: 0; }
@@ -702,9 +725,13 @@ body.noI {
   background-color: transparent; }
 .wufoo li.buttons {
   text-align: center; }
+.wufoo li span label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300; }
 .wufoo label.desc,
 .wufoo legend.desc {
   font-size: 100%;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400; }
 .wufoo fieldset {
   border: 0 none;
