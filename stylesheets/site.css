@@ -733,11 +733,16 @@ body.noI {
   font-size: 100%;
   font-family: "Montserrat", sans-serif;
   font-weight: 400; }
+.wufoo input.text, .wufoo input.file {
+  font-family: "Montserrat", sans-serif; }
+.wufoo textarea.textarea {
+  font-family: "Montserrat", sans-serif; }
 .wufoo fieldset {
   border: 0 none;
   padding: 0; }
   .wufoo fieldset span {
-    display: inline-block; }
+    display: inline-block;
+    font-family: "Montserrat", sans-serif; }
 .wufoo .confirm h2 {
   color: #05060a;
   font-family: "Montserrat", sans-serif;
