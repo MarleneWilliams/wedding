@@ -6,7 +6,8 @@ input[type=text],
 input[type=email],
 input[type=tel],
 input.text,
-textarea.textarea {
+textarea.textarea,
+select.select {
 	@include transition(bacground-color, border-color);
   background: $white;
 	border: 2px solid #c3c3c3;
@@ -25,7 +26,7 @@ textarea.textarea {
 
 input[type=submit] {
 	@include transition(background-color, color);
-  background-color: $link-color;
+  background-color: $button-color;
 	border: 0 none;
   color: $white;
   border-radius: 0;
@@ -33,7 +34,7 @@ input[type=submit] {
   &:hover,
   &:focus,
   &:active {
-  	background-color: $link-hover-color;
+  	background-color: $button-hover-color;
   }
 }
 
@@ -116,7 +117,9 @@ body.noI {
 			font-family: $body-font;
 		}
 	}
-	textarea.textarea {
+	textarea.textarea,
+	select.select {
+		color: $text-color;
 		font-family: $body-font;
 	}
 

@@ -5,8 +5,7 @@
 .page-header {
   margin-bottom: 15px;
   @include mq($md) {
-    background-color: transparentize($white, 0.15);
-    box-shadow: 0px 5px 5px transparentize($white, 0.1);
+    background-color: transparentize($white, 0.1);
     left: 0;
     margin-bottom: 0;
     position: fixed;
@@ -29,6 +28,7 @@
   }
   &--item {
     display: inline-block;
+    font-family: $statement-font;
     @include mq($ph) {
       flex: 0 0 20%;
       text-align: center;

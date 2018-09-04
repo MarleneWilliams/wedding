@@ -2,17 +2,15 @@
 // Fonts
 //
 
-// Great Vibes - script
-// @import url('https://fonts.googleapis.com/css?family=Great+Vibes');
 // Forum - serif
-// @import url('https://fonts.googleapis.com/css?family=Forum');
+@import url('https://fonts.googleapis.com/css?family=Forum');
 // Monteserrat - sans-serif
-// @import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
 // Playfair Display - serif
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 // Pinyon Script - script
-// @import url('https://fonts.googleapis.com/css?family=Pinyon+Script');
+@import url('https://fonts.googleapis.com/css?family=Pinyon+Script');
 
 //
 // Base HTML styles
@@ -35,7 +33,7 @@ body {
   -webkit-text-size-adjust: 100%;  //fix for iOS
   background-color: $white;
   font-family: $body-font;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   padding: 0 20px 240px 20px;
   position: relative;
@@ -51,7 +49,7 @@ body {
   	width: 100%;
   }
   &:after {
-  	background-color: transparentize($white, 0.15);
+  	background-color: transparentize($white, 0.08);
   	z-index: -1;
   }
   &:before {
@@ -74,20 +72,21 @@ h1 {
   margin: 0;
 }
 h2 {
-	font-family: $serif;
-	font-size: 1.5em;
+	font-family: $heading-font;
+	font-size: 1.75em;
 	margin-bottom: .5em;
 	text-transform: uppercase;
 	@include mq($md) {
-		font-size: 2em;
+		font-size: 2.25em;
 	}
 	@include mq($lg) {
-		font-size: 2.25em;
+		font-size: 2.5em;
 	}
 }
 h3 {
+	font-family: $sans-serif;
 	font-size: 1.25em;
-	text-transform: uppercase;
+	// text-transform: uppercase;
 	@include mq($md) {
 		font-size: 1.5em;
 	}

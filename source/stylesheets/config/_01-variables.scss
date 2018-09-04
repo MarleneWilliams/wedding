@@ -5,6 +5,7 @@
 // Colors
 $black: #000000;
 $black-blue: #05060a;
+$text-black: #222222;
 $white: #ffffff;
 $silver: #d6d6d7;
 $green: #305c19;
@@ -17,6 +18,9 @@ $text-color: $black-blue;
 
 $link-color: $blue;
 $link-hover-color: lighten($blue, 30%);
+
+$button-color: $green;
+$button-hover-color: lighten($green, 25%);
 
 // Font stacks
 $pinyon: 'Pinyon Script', cursive;
@@ -32,7 +36,7 @@ $statement-font: $playfair-display;
 $serif: $playfair-display;
 $sans-serif: $montesserat;
 
-$heading-font: $sans-serif;
+$heading-font: $serif;
 $body-font: $sans-serif;
 
 
