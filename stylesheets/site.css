@@ -5,8 +5,11 @@
 /*
  * Corrects `block` display not defined in IE 8/9.
  */
+@import url("https://fonts.googleapis.com/css?family=Forum");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Pinyon+Script");
 article,
 aside,
 details,
@@ -328,7 +331,7 @@ body {
   -webkit-text-size-adjust: 100%;
   background-color: #ffffff;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   padding: 0 20px 240px 20px;
   position: relative;
@@ -342,7 +345,7 @@ body {
     top: 0;
     width: 100%; }
   body:after {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.92);
     z-index: -1; }
   body:before {
     background-image: url("../images/mountain-background--med-quality.jpg");
@@ -352,7 +355,7 @@ body {
 
 h1, h2, h3, h4, h5 {
   color: #05060a;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
   font-weight: 300;
   margin-bottom: .3em;
   margin-top: 1.5em; }
@@ -363,19 +366,19 @@ h1 {
 
 h2 {
   font-family: "Playfair Display", serif;
-  font-size: 1.5em;
+  font-size: 1.75em;
   margin-bottom: .5em;
   text-transform: uppercase; }
   @media (min-width: 769px) {
     h2 {
-      font-size: 2em; } }
+      font-size: 2.25em; } }
   @media (min-width: 1100px) {
     h2 {
-      font-size: 2.25em; } }
+      font-size: 2.5em; } }
 
 h3 {
-  font-size: 1.25em;
-  text-transform: uppercase; }
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25em; }
   @media (min-width: 769px) {
     h3 {
       font-size: 1.5em; } }
@@ -404,9 +407,7 @@ address {
   margin-bottom: 15px; }
   @media (min-width: 769px) {
     .page-header {
-      background-color: rgba(255, 255, 255, 0.85);
-      -webkit-box-shadow: 0px 5px 5px rgba(255, 255, 255, 0.9);
-              box-shadow: 0px 5px 5px rgba(255, 255, 255, 0.9);
+      background-color: rgba(255, 255, 255, 0.9);
       left: 0;
       margin-bottom: 0;
       position: fixed;
@@ -434,7 +435,8 @@ address {
           -ms-flex-pack: center;
               justify-content: center; } }
 .page-menu--item {
-  display: inline-block; }
+  display: inline-block;
+  font-family: "Playfair Display", serif; }
   @media (min-width: 401px) {
     .page-menu--item {
       -webkit-box-flex: 0;
@@ -639,7 +641,8 @@ input[type=text],
 input[type=email],
 input[type=tel],
 input.text,
-textarea.textarea {
+textarea.textarea,
+select.select {
   -webkit-transition: bacground-color 0.3s ease , border-color 0.3s ease;
   -o-transition: bacground-color 0.3s ease , border-color 0.3s ease;
   transition: bacground-color 0.3s ease , border-color 0.3s ease;
@@ -659,27 +662,31 @@ textarea.textarea {
   input.text:active,
   textarea.textarea:hover,
   textarea.textarea:focus,
-  textarea.textarea:active {
+  textarea.textarea:active,
+  select.select:hover,
+  select.select:focus,
+  select.select:active {
     border-color: #7c7c7c;
     outline: none; }
   input[type=text]:hover,
   input[type=email]:hover,
   input[type=tel]:hover,
   input.text:hover,
-  textarea.textarea:hover {
+  textarea.textarea:hover,
+  select.select:hover {
     border-color: #9c9c9c; }
 
 input[type=submit] {
   -webkit-transition: background-color 0.3s ease , color 0.3s ease;
   -o-transition: background-color 0.3s ease , color 0.3s ease;
   transition: background-color 0.3s ease , color 0.3s ease;
-  background-color: #1d2968;
+  background-color: #305c19;
   border: 0 none;
   color: #ffffff;
   border-radius: 0;
   padding: .5em 1.5em; }
   input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active {
-    background-color: #5064ce; }
+    background-color: #64c034; }
 
 label.desc,
 legend.desc {
@@ -735,7 +742,9 @@ body.noI {
   font-weight: 400; }
 .wufoo input.text, .wufoo input.file {
   font-family: "Montserrat", sans-serif; }
-.wufoo textarea.textarea {
+.wufoo textarea.textarea,
+.wufoo select.select {
+  color: #05060a;
   font-family: "Montserrat", sans-serif; }
 .wufoo fieldset {
   border: 0 none;
@@ -745,5 +754,5 @@ body.noI {
     font-family: "Montserrat", sans-serif; }
 .wufoo .confirm h2 {
   color: #05060a;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
   font-weight: 300; }
