@@ -686,7 +686,7 @@ input[type=submit] {
   border-radius: 0;
   padding: .5em 1.5em; }
   input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active {
-    background-color: #64c034; }
+    background-color: #4f9829; }
 
 label.desc,
 legend.desc {
@@ -705,7 +705,7 @@ html.embed {
 body.noI {
   background-color: transparent;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   padding: 0; }
   .embed body:after, .embed body:before,
@@ -728,31 +728,34 @@ body.noI {
 .wufoo-form .buttons {
   text-align: center; }
 
-.wufoo li.focused {
-  background-color: transparent; }
-.wufoo li.buttons {
-  text-align: center; }
-.wufoo li span label {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300; }
-.wufoo label.desc,
-.wufoo legend.desc {
-  font-size: 100%;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400; }
-.wufoo input.text, .wufoo input.file {
-  font-family: "Montserrat", sans-serif; }
-.wufoo textarea.textarea,
-.wufoo select.select {
-  color: #05060a;
-  font-family: "Montserrat", sans-serif; }
-.wufoo fieldset {
-  border: 0 none;
-  padding: 0; }
-  .wufoo fieldset span {
-    display: inline-block;
+.wufoo {
+  font-size: 18px; }
+  .wufoo li.focused {
+    background-color: transparent; }
+  .wufoo li.buttons {
+    text-align: center; }
+  .wufoo li span label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300; }
+  .wufoo label.desc,
+  .wufoo legend.desc {
+    font-size: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400; }
+  .wufoo input.text, .wufoo input.file {
     font-family: "Montserrat", sans-serif; }
-.wufoo .confirm h2 {
-  color: #05060a;
-  font-family: "Playfair Display", serif;
-  font-weight: 300; }
+  .wufoo textarea.textarea,
+  .wufoo select.select {
+    color: #05060a;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px; }
+  .wufoo fieldset {
+    border: 0 none;
+    padding: 0; }
+    .wufoo fieldset span {
+      display: inline-block;
+      font-family: "Montserrat", sans-serif; }
+  .wufoo .confirm h2 {
+    color: #05060a;
+    font-family: "Playfair Display", serif;
+    font-weight: 300; }
