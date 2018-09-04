@@ -20,7 +20,7 @@ $link-color: $blue;
 $link-hover-color: lighten($blue, 30%);
 
 $button-color: $green;
-$button-hover-color: lighten($green, 25%);
+$button-hover-color: lighten($green, 15%);
 
 // Font stacks
 $pinyon: 'Pinyon Script', cursive;
@@ -38,6 +38,10 @@ $sans-serif: $montesserat;
 
 $heading-font: $serif;
 $body-font: $sans-serif;
+
+
+// Other
+$base-font-size: 18px;
 
 
 //

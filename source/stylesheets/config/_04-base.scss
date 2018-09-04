@@ -33,7 +33,7 @@ body {
   -webkit-text-size-adjust: 100%;  //fix for iOS
   background-color: $white;
   font-family: $body-font;
-  font-size: 18px;
+  font-size: $base-font-size;
   font-weight: 300;
   padding: 0 20px 240px 20px;
   position: relative;

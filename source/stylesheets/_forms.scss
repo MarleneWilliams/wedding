@@ -64,7 +64,7 @@ html.embed {
 body.noI {
 	background-color: transparent;
   font-family: $body-font;
-  font-size: 16px;
+  font-size: $base-font-size;
   font-weight: 300;
   padding: 0;
   &:after,
@@ -87,6 +87,7 @@ body.noI {
 	}
 }
 .wufoo {
+	font-size: $base-font-size;
 	li {
 		&.focused {
 			background-color: transparent;
@@ -121,6 +122,7 @@ body.noI {
 	select.select {
 		color: $text-color;
 		font-family: $body-font;
+		font-size: $base-font-size;
 	}
 
 	fieldset {
