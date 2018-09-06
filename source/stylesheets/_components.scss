@@ -182,7 +182,12 @@
 
 .date {
   font-size: 1.5em;
+  margin-bottom: .25em;
   text-transform: uppercase;
+}
+.time {
+  // font-family: $serif;
+  margin-top: 0;
 }
 
 .location {

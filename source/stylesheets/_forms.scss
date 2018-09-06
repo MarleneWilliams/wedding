@@ -141,4 +141,25 @@ body.noI {
 			font-weight: 300;
 		}
 	}
+  
+  // Unique field styles
+
+  
+  #fo1li1, // Name labels
+  #fo1li4, // Phone labels
+  #fo1li227 { // Address labels
+  	span {
+  		label {
+  			@include hide();
+  		}
+  	}
+  }
+
+  #fo1li227, // Address label description
+  #fo1li234 { // Phone checkbox
+  	.desc {
+  		@include hide();
+  	}
+  }
+
 }
