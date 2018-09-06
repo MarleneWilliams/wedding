@@ -581,7 +581,11 @@ address {
 
 .date {
   font-size: 1.5em;
+  margin-bottom: .25em;
   text-transform: uppercase; }
+
+.time {
+  margin-top: 0; }
 
 .location--name {
   font-weight: 400;
@@ -759,3 +763,20 @@ body.noI {
     color: #05060a;
     font-family: "Playfair Display", serif;
     font-weight: 300; }
+  .wufoo #fo1li1 span label,
+  .wufoo #fo1li4 span label,
+  .wufoo #fo1li227 span label {
+    left: -10000px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px; }
+  .wufoo #fo1li227 .desc,
+  .wufoo #fo1li234 .desc {
+    left: -10000px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px; }
