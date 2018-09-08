@@ -1,30 +1,25 @@
 require 'middleman-gh-pages'
 
+# Setup / reset
+# 'rake install'
 desc 'Install dependencies'
 task :install do
+  system 'gem install bundler'
   system 'bundle install'
-  system 'npm install -g browser-sync@2.23.5'
 end
 
-# Change basetheme.dev to your site path
-desc 'Running Browsersync'
-task :browsersync do
-  system 'browser-sync start --proxy "wedding.local" --files "stylesheets/*.css, javascripts/*.js, source/**/*.slim" --no-inject-changes'
-end
-
-desc 'Watch sass'
-task :sasswatch do
-    system 'bundle exec sass -r sass-globbing --watch sass:css'
-end
-
-desc 'Serve'
+# Run Middleman server
+# 'rake serve'
+#
+# Note: The most current version of Middleman breaks when trying to use the Livereload gem (see this GitHub issue: https://github.com/middleman/middleman/issues/2142). Some magic that might be explained here (https://github.com/egonSchiele/contracts.ruby) allows the addition of this exposed variable to help us get past the errors: `NO_CONTRACTS=true`.
+#
+desc 'Running Middleman server'
 task :serve do
-  threads = []
-    %w{sasswatch browsersync}.each do |task|
-      threads << Thread.new(task) do |devtask|
-        Rake::Task[devtask].invoke
-      end
-    end
-  threads.each {|thread| thread.join}
-  puts threads
+  system 'NO_CONTRACTS=true bundle exec middleman serve'
 end
+
+# Build site
+# 'rake build'
+
+# Publish to GitHub Pages
+# 'rake publish'

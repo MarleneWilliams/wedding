@@ -28,8 +28,9 @@ input[type=submit] {
 	@include transition(background-color, color);
   background-color: $button-color;
 	border: 0 none;
-  color: $white;
   border-radius: 0;
+  color: $white;
+  font-family: $body-font;
   padding: .5em 1.5em;
   &:hover,
   &:focus,
