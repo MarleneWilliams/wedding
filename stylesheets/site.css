@@ -686,11 +686,12 @@ input[type=submit] {
   transition: background-color 0.3s ease , color 0.3s ease;
   background-color: #305c19;
   border: 0 none;
-  color: #ffffff;
   border-radius: 0;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
   padding: .5em 1.5em; }
   input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active {
-    background-color: #4f9829; }
+    background-color: #458424; }
 
 label.desc,
 legend.desc {
