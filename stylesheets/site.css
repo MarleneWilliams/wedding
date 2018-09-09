@@ -662,8 +662,8 @@ select.select {
   transition: bacground-color 0.3s ease , border-color 0.3s ease;
   background: #ffffff;
   border: 2px solid #c3c3c3;
-  border-radius: 1.25em;
-  padding: .5em 1.5em; }
+  border-radius: .5em;
+  padding: .25em 1em; }
   input[type=text]:hover, input[type=text]:focus, input[type=text]:active,
   input[type=email]:hover,
   input[type=email]:focus,
@@ -696,7 +696,7 @@ input[type=submit] {
   transition: background-color 0.3s ease , color 0.3s ease;
   background-color: #305c19;
   border: 0 none;
-  border-radius: 0;
+  border-radius: .25em;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
   padding: .5em 1.5em; }
@@ -814,4 +814,7 @@ body.noI {
     margin-top: 12px; }
     .wufoo #fo1li234 .choice__text:after {
       color: red;
-      content: '*'; }
+      content: '*';
+      display: inline-block;
+      margin-left: .25em;
+      font-weight: bold; }
