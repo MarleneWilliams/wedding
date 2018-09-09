@@ -506,6 +506,13 @@ address {
     margin-top: 0; }
   .page-section--rsvp {
     margin-bottom: 80px; }
+  .page-section--registries .section-title {
+    margin-bottom: .25em; }
+  .page-section--registries p {
+    margin-top: 0; }
+    @media (min-width: 769px) {
+      .page-section--registries p {
+        margin-bottom: .25em; } }
 
 .section-anchor {
   display: block;
@@ -632,10 +639,16 @@ address {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 40px;
-  padding-top: 20px;
+  padding-top: 10px;
   text-align: center; }
+  @media (min-width: 769px) {
+    .registry--items {
+      padding-top: 0; } }
 .registry--item {
   margin: 0 20px 40px 20px; }
+  @media (min-width: 769px) {
+    .registry--item.cutco {
+      margin-top: 30px; } }
   .registry--item p {
     font-family: "Playfair Display", serif;
     font-size: .85em; }
