@@ -502,6 +502,10 @@ address {
 
 .page-section {
   margin-bottom: 40px; }
+  .page-section .section-title {
+    margin-top: 0; }
+  .page-section--rsvp {
+    margin-bottom: 80px; }
 
 .section-anchor {
   display: block;
@@ -527,9 +531,6 @@ address {
 .welcome {
   margin-bottom: 20px; }
 
-.intro {
-  margin-bottom: 60px; }
-
 .page-title {
   font-family: "Playfair Display", serif;
   font-size: 1.5em;
@@ -541,7 +542,7 @@ address {
   @media (min-width: 401px) {
     .page-title {
       font-size: 1.75em;
-      max-width: 8.5em; } }
+      max-width: 100%; } }
   @media (min-width: 769px) {
     .page-title {
       font-size: 2.25em;
@@ -557,6 +558,9 @@ address {
       text-align: left; }
     .page-title .name:last-of-type {
       text-align: right; }
+    @media (min-width: 401px) {
+      .page-title .name {
+        display: inline; } }
     @media (min-width: 769px) {
       .page-title .name {
         font-size: 1.5em;
@@ -566,18 +570,18 @@ address {
   display: block;
   line-height: .65;
   margin-top: .45em; }
-  @media (min-width: 769px) {
+  @media (min-width: 401px) {
     .and {
       display: inline;
       line-height: inherit; } }
+
+.intro {
+  margin-bottom: 60px; }
 
 .intro-picture {
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto; }
-  @media (min-width: 401px) {
-    .intro-picture {
-      width: 60%; } }
 
 .date {
   font-size: 1.5em;
@@ -616,8 +620,9 @@ address {
   to {
     -webkit-transform: scale(1); } }
 .registry--items {
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -631,10 +636,15 @@ address {
   text-align: center; }
 .registry--item {
   margin: 0 20px 40px 20px; }
+  .registry--item p {
+    font-family: "Playfair Display", serif;
+    font-size: .85em; }
 .registry--link {
   display: block;
   margin: 0 auto;
   max-width: 200px; }
+  .registry--link.rei {
+    width: 70%; }
   .registry--link img {
     margin: 0 auto; }
 
