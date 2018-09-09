@@ -104,6 +104,12 @@ body.noI {
 		}
 	}
 
+	form {
+		span.req {
+			// Change color here !important;
+		}
+	}
+
 	label,
 	legend {
 		&.desc {
@@ -143,9 +149,11 @@ body.noI {
 		}
 	}
   
+  //
   // Unique field styles
+  //
 
-  
+  // Hide labels
   #fo1li1, // Name labels
   #fo1li4, // Phone labels
   #fo1li227 { // Address labels
@@ -155,12 +163,32 @@ body.noI {
   		}
   	}
   }
-
   #fo1li227, // Address label description
-  #fo1li234 { // Phone checkbox
+  #fo1li234 { // Terms / phone checkbox
   	.desc {
   		@include hide();
   	}
+  }
+
+  // Indent fields
+  #fo1li336, // Dishes I can bring
+  #fo1li4, // Phone number
+  #fo1li437, // Email address
+  #fo1li5, // Preferred contact method
+  #fo1li8, // Who will be attending
+  #fo1li124, // Dietry restrictions, multi choice
+  #fo1li19 { // Dietary restrictions, other
+
+  }
+
+  // Thank you address
+  #fo1li540 {
+
+  }
+
+  // Terms / phone checkbox
+  #fo1li234 {
+
   }
 
 }

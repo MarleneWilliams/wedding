@@ -14,10 +14,11 @@ a#page-top
         li.page-menu--item.registry-link
           == link_to "Registries", "#section-registries", class: "page-menu--link"
 
-  section.page-section
+  section.page-section.page-section--intro
     .welcome
       .intro-picture
-        == image_tag 'mm-pic-1.jpg'
+        / == image_tag 'mm-pic-1.jpg'
+        == image_tag 'mm-pic-1b.jpg'
       h1.page-title
         span.name Michael
         span.and  & 
@@ -29,6 +30,12 @@ a#page-top
         == link_to "Southlake Church", "https://goo.gl/maps/bMCWZoQRYfM2"
       address.location 1555 SW Borland Road <br> West Linn, Oregon 97068
 
+  section.page-section.page-section--rsvp
+    a#section-rsvp.section-anchor
+    h2.section-title RSVP
+    == partial "/partials/wufoo-rsvp.html"
+    == link_to "Back to top", "#page-top", class: "top-link"
+
     .additional-info
       h3.additional-info--title Additional info
       p 
@@ -36,40 +43,31 @@ a#page-top
         |  Semi-Formal
       p 
         span.bold Parking:
-        |  Onsite and plentiful
-      p 
-        span.bold Reception:
-        |  The reception will follow the ceremony, with a small break in between to transition the main area from the ceremony seating to tables and chairs.
-      p 
-        span.bold Cell phones:
-        |  For the sake of participants and other guests, we ask that cell phones be turned off during the ceremony.
-      p 
-        span.bold Photos:
-        |  No photos allowed during the ceremony. Our photographers will be handling it!
-    == link_to "Back to top", "#page-top", class: "top-link"
-
-  section.page-section.page-section--rsvp
-    a#section-rsvp.section-anchor
-    h2.section-title RSVP
-    == partial "/partials/wufoo-rsvp.html"
+        |  On-site and plentiful
+      p An on-site reception will follow the ceremony. There will be a short transition/reset period between the two.
+      p Please refrain from taking photos during the ceremony.  Cell phones and cameras are to be powered off to limit interruptions and distractions. Thank you!
     == link_to "Back to top", "#page-top", class: "top-link"
 
   section.page-section.page-section--registries
     a#section-registries.section-anchor
     h2.section-title Registries
+    p We are registered at the following places:
     .registry--items
       .registry--item
         == link_to image_tag('logo-cutco.svg'), "http://cutco.com/registry/554yj", class: "registry--link"
-        p The best knives ever!
+        p Cutlery & kitchen items
       .registry--item
         == link_to image_tag('logo-amazon.svg'), "https://www.amazon.com/wedding/michael-wanberg-marlene-williams-west-linn-october-2018/registry/1EI27XDF7ZI30", class: "registry--link"
-        p Household items
+        p Bedding, kitchen goods, etc.
       .registry--item
         == link_to image_tag('logo-bed-bath-and-beyond.svg'), "https://www.bedbathandbeyond.com:443/store/giftregistry/view_registry_guest.jsp?registryId=546463616&eventType=Wedding&pwsurl=", class: "registry--link"
-        p Household items
+        p Kitchen, canine, games, etc.
       .registry--item
-        == link_to image_tag('logo-rei-co-op-logo-vector.svg'), "https://www.rei.com/GiftRegistryDetails/15289984", class: "registry--link"
-        p Help us adventure!
-    h3 Gift cards
-    p More coming soon
+        == link_to image_tag('logo-rei-co-op-logo-vector.svg'), "https://www.rei.com/GiftRegistryDetails/15289984", class: "registry--link rei"
+        p Adventure & travel gear
+    h3 Gift card ideas
+    p 
+      == link_to "Fred Meyer (Kroger)", "https://www.kroger.com/purchaseNewGiftCards", class: "bold"
+      |  – Household & groceries
+    p More coming soon!
     == link_to "Back to top", "#page-top", class: "top-link"
