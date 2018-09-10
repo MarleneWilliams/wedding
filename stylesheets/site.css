@@ -702,6 +702,13 @@ select.select {
   textarea.textarea:hover,
   select.select:hover {
     border-color: #9c9c9c; }
+  input[type=text]:placeholder,
+  input[type=email]:placeholder,
+  input[type=tel]:placeholder,
+  input.text:placeholder,
+  textarea.textarea:placeholder,
+  select.select:placeholder {
+    color: #c3c3c3; }
 
 input[type=submit] {
   -webkit-transition: background-color 0.3s ease , color 0.3s ease;
@@ -831,3 +838,13 @@ body.noI {
       display: inline-block;
       margin-left: .25em;
       font-weight: bold; }
+
+.confirm h2 {
+  color: #05060a;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-transform: none; }
