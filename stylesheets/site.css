@@ -336,22 +336,6 @@ body {
   padding: 0 20px 240px 20px;
   position: relative;
   text-align: center; }
-  body:after, body:before {
-    content: '';
-    display: block;
-    height: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%; }
-  body:after {
-    background-color: rgba(255, 255, 255, 0.92);
-    z-index: -1; }
-  body:before {
-    background-image: url("../images/mountain-background--med-quality.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -2; }
 
 h1, h2, h3, h4, h5 {
   color: #05060a;
@@ -403,16 +387,51 @@ img {
 address {
   font-style: unset; }
 
+body:after, body:before {
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+body:after {
+  background-color: rgba(255, 255, 255, 0.92);
+  z-index: -1; }
+body:before {
+  background-image: url("../images/mountain-background--med-quality.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -2; }
+
 .page-header {
   margin-bottom: 15px; }
   @media (min-width: 769px) {
     .page-header {
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: #ffffff;
+      background-image: none;
       left: 0;
       margin-bottom: 0;
       position: fixed;
       top: 0;
       width: 100%; } }
+  .page-header:after {
+    background-image: url("../images/menu-bg--green-darklight.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 240%;
+    content: '';
+    display: block;
+    left: 0;
+    opacity: .1;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+    @media (min-width: 769px) {
+      .page-header:after {
+        background-size: contain;
+        bottom: 0;
+        z-index: -1; } }
 
 .page-menu ul {
   margin: 0;
@@ -466,7 +485,8 @@ address {
                 flex: 0 0 auto; } }
     .page-menu--item.home-link a {
       font-size: 2em;
-      padding: .5em 0; }
+      padding: .5em 0;
+      text-shadow: 0 0 2px #ffffff, 0 0 5px #ffffff, 0 0 15px #ffffff, 0 0 25px #ffffff; }
       @media (min-width: 401px) {
         .page-menu--item.home-link a {
           font-size: 1.5em;
@@ -476,6 +496,7 @@ address {
           max-width: 8em; } }
       @media (min-width: 769px) {
         .page-menu--item.home-link a {
+          margin-bottom: .5em;
           padding: .5em 2em; } }
   @media (min-width: 401px) {
     .page-menu--item.rsvp-link {
@@ -492,6 +513,15 @@ address {
   @media (min-width: 992px) {
     .page-menu--link {
       padding: .5em 2em; } }
+
+.decorative-page-bottom {
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  bottom: 0;
+  height: 300px;
+  left: 0;
+  position: absolute;
+  width: 100%; }
 
 .page-container {
   margin: 0 auto;
@@ -702,12 +732,33 @@ select.select {
   textarea.textarea:hover,
   select.select:hover {
     border-color: #9c9c9c; }
-  input[type=text]:placeholder,
-  input[type=email]:placeholder,
-  input[type=tel]:placeholder,
-  input.text:placeholder,
-  textarea.textarea:placeholder,
-  select.select:placeholder {
+  input[type=text]::-webkit-input-placeholder,
+  input[type=email]::-webkit-input-placeholder,
+  input[type=tel]::-webkit-input-placeholder,
+  input.text::-webkit-input-placeholder,
+  textarea.textarea::-webkit-input-placeholder,
+  select.select::-webkit-input-placeholder {
+    color: #c3c3c3; }
+  input[type=text]:-ms-input-placeholder,
+  input[type=email]:-ms-input-placeholder,
+  input[type=tel]:-ms-input-placeholder,
+  input.text:-ms-input-placeholder,
+  textarea.textarea:-ms-input-placeholder,
+  select.select:-ms-input-placeholder {
+    color: #c3c3c3; }
+  input[type=text]::-ms-input-placeholder,
+  input[type=email]::-ms-input-placeholder,
+  input[type=tel]::-ms-input-placeholder,
+  input.text::-ms-input-placeholder,
+  textarea.textarea::-ms-input-placeholder,
+  select.select::-ms-input-placeholder {
+    color: #c3c3c3; }
+  input[type=text]::placeholder,
+  input[type=email]::placeholder,
+  input[type=tel]::placeholder,
+  input.text::placeholder,
+  textarea.textarea::placeholder,
+  select.select::placeholder {
     color: #c3c3c3; }
 
 input[type=submit] {
@@ -843,8 +894,9 @@ body.noI {
   color: #05060a;
   font-family: "Montserrat", sans-serif;
   font-size: 1.5em;
+  font-weight: 300;
   margin-left: 0;
   margin-right: 0;
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   text-transform: none; }
