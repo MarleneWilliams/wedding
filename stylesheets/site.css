@@ -872,6 +872,8 @@ body.noI {
   .wufoo #fo1li540 {
     margin-top: 12px;
     padding-bottom: 0; }
+  .wufoo #fo1li227 .addr2 {
+    display: none; }
   .wufoo #fo1li234 {
     margin-top: 12px; }
     .wufoo #fo1li234 .choice__text:after {
