@@ -514,15 +514,6 @@ body:before {
     .page-menu--link {
       padding: .5em 2em; } }
 
-.decorative-page-bottom {
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  bottom: 0;
-  height: 300px;
-  left: 0;
-  position: absolute;
-  width: 100%; }
-
 .page-container {
   margin: 0 auto;
   max-width: 1200px; }
